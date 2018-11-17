@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { createStackNavigator, createBottomTabNavigator } from 'react-navigation'
 
 import Home from '../screens/Home'
-import Instructions from '../screens/Instructions'
+import Tips from '../screens/Tips'
 import Info from '../screens/Info'
 
 import defaultNavigationOptions from './defaultNavigationOptions'
@@ -10,7 +10,7 @@ import {Colors} from '../constants'
 
 const App = createBottomTabNavigator(
   {
-    Instructions: Instructions,
+    Tips: Tips,
     Home: Home,
     Info: Info,
   },

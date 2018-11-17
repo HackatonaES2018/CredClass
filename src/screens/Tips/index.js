@@ -1,18 +1,18 @@
 import React, { Component } from "react";
 import { View, Text } from "react-native";
 
+import TipList from '../../components/TipList'
+
 import styles from "./styles";
 
-export default class Home extends Component {
+export default class Tips extends Component {
   constructor(props) {
     super(props);
   }
 
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Hello World</Text>
-      </View>
+      <TipList /> 
     );
   }
 }
