@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { createAppContainer, createStackNavigator, createBottomTabNavigator } from 'react-navigation'
+import { createStackNavigator, createBottomTabNavigator } from 'react-navigation'
 
 import Home from '../screens/Home'
 import Instructions from '../screens/Instructions'
@@ -8,7 +8,7 @@ import Info from '../screens/Info'
 import defaultNavigationOptions from './defaultNavigationOptions'
 import {Colors} from '../constants'
 
-const AppNavigator = createBottomTabNavigator(
+const App = createBottomTabNavigator(
   {
     Instructions: Instructions,
     Home: Home,
@@ -22,7 +22,5 @@ const AppNavigator = createBottomTabNavigator(
     },
   },
 )
-
-const App = createAppContainer(AppNavigator);
 
 export default App
