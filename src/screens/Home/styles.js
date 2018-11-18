@@ -16,8 +16,8 @@ const styles = StyleSheet.create({
     color: 'gray',
   },
   amountText: {
-    fontSize: 18,
-    fontWeight: '900',
+    fontSize: 16,
+    fontWeight: 'bold',
   },
 });
 

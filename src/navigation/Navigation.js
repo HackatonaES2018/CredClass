@@ -11,13 +11,13 @@ import {Colors} from '../constants'
 
 const App = createBottomTabNavigator(
   {
-    Tips: Tips,
-    Home: Home,
-    Info: Info,
+    Dicas: Tips,
+    Inicio: Home,
+    Informações: Info,
     slideScreen: slideScreen,
   },
   {
-    initialRouteName: 'Home',
+    initialRouteName: 'Inicio',
 
   },
 )

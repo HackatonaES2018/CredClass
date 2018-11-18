@@ -11,19 +11,19 @@ export default class Info extends Component {
         {
           key: 1, 
           title: "Contas da casa",
-          message: "Pagar contas antecipadamente ajudam a melhorar seu score",   
+          message: "Opção para registrar as contas de casa",   
           image: require('../../images/image1.jpg'),
         },
         {
           key: 2, 
           title: "Contas Extras",
-          message: "Não faça dívidas maiores do que você pode pagar",   
+          message: "Opção para registrar as contas extras do orçamento",   
           image: require('../../images/image2.jpg'),
         },
         {
           key: 3, 
           title: "Contas Temporárias",
-          message: "Caso esteja pendente com alguma empresa, busque uma negociação e cumpra todo o acordo.",   
+          message: "Nesta opção você pode fornecer suas contas temporárias",   
           image: require('../../images/image3.jpg'),
         },
         {
@@ -53,7 +53,7 @@ export default class Info extends Component {
           
 
           <Text style={{alignSelf: 'center', color: '#909090',marginHorizontal: 10, 
-          marginTop: 10, textAlign: 'center'}}>Segundo seu dados você não esta apto a receber credito. Mas nao se fica triste, pois 
+          marginTop: 10, textAlign: 'center'}}>Segundo seu dados você não esta apto a receber crédito. Mas não fique triste, pois 
             podemos te ajudar a conseguir crédito. Para isso insira alguma informações escolhendo alguma categoria 
             abaixo:
           </Text>
@@ -86,7 +86,7 @@ export default class Info extends Component {
                           borderRadius: 5,
                           alignItems: "center",
                         }}
-                          onPress={() => this.props.navigation.navigate('slideScreen')}
+                          onPress={() => this.props.navigation.navigate("slideScreen")}
                       >
                         <View>
                           <Image style={{height: 120, width:180, alignSelf: 'center', borderRadius: 5, marginTop: 5}} source={item.image}/> 
