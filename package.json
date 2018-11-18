@@ -12,6 +12,7 @@
     "native-base": "^2.8.1",
     "react": "16.6.1",
     "react-native": "0.57.5",
+    "react-native-app-intro-slider": "^1.0.1",
     "react-native-gesture-handler": "^1.0.9",
     "react-native-motion": "^0.2.0",
     "react-navigation": "^2.18.0"

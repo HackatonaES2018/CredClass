@@ -8,3 +8,4 @@ AppRegistry.registerComponent(appName, () => App);
 
 import { YellowBox } from 'react-native';
 YellowBox.ignoreWarnings(["Warning:"]);
+YellowBox.ignoreWarnings(["Require cycle:"]);
