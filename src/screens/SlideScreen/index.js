@@ -64,7 +64,18 @@ const transitionAnimation = index => {
 };
 
 export default class App extends Component {
+  constructor(props){
+    super(props)
+  }
+
+  static navigationOptions = {
+    header: null,
+  }
+
   render() {
+
+    const key = this.props.navigation.getParam('key', '');
+
     return (
       <Animated.ScrollView
         scrollEventThrottle={16}
@@ -96,7 +107,8 @@ const styles = StyleSheet.create({
   },
   scrollPage: {
     width: SCREEN_WIDTH,
-    padding: 20
+    paddingHorizontal: 20,
+    paddingVertical: 40,
   },
   screen: {
     height: 600,

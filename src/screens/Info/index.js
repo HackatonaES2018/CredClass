@@ -3,8 +3,14 @@ import { View, Text, ScrollView, TouchableOpacity, StyleSheet, FlatList, Image} 
 
 import CategoryCell from '../../components/catergoryCell'
 
+import styles from './styles'
+
 export default class Info extends Component {
   
+  static navigationOptions = {
+    header: null,
+  }
+
   state = {
 
     categoryList: [
@@ -86,7 +92,7 @@ export default class Info extends Component {
                           borderRadius: 5,
                           alignItems: "center",
                         }}
-                          onPress={() => this.props.navigation.navigate('slideScreen')}
+                          onPress={() => this.props.navigation.navigate('SlideScreen', {key: item.key})}
                       >
                         <View>
                           <Image style={{height: 120, width:180, alignSelf: 'center', borderRadius: 5, marginTop: 5}} source={item.image}/> 
@@ -106,38 +112,4 @@ export default class Info extends Component {
     );
   }
 }
-
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#f0981d',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  header: {
-    height: 50,
-    paddingTop: 0,
-    backgroundColor: '#FFF',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  headerText: {
-    fontSize: 16,
-    fontWeight: 'bold',
-  },
-  listSyle: {
-    padding: 10,
-  },
-  listItem:{
-    padding: 20,
-    backgroundColor: "#00ff",
-    height: 85,
-    marginBottom: 10,
-    borderRadius: 5,
-  },
-});
 
