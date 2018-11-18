@@ -11,19 +11,19 @@ export default class Info extends Component {
         {
           key: 1, 
           title: "Contas da casa",
-          message: "Pagar contas antecipadamente ajudam a melhorar seu score",   
+          message: "Opção para registrar as contas de casa",   
           image: require('../../images/image1.jpg'),
         },
         {
           key: 2, 
           title: "Contas Extras",
-          message: "Não faça dívidas maiores do que você pode pagar",   
+          message: "Opção para registrar as contas extras do orçamento",   
           image: require('../../images/image2.jpg'),
         },
         {
           key: 3, 
           title: "Contas Temporárias",
-          message: "Caso esteja pendente com alguma empresa, busque uma negociação e cumpra todo o acordo.",   
+          message: "Nesta opção você pode fornecer suas contas temporárias",   
           image: require('../../images/image3.jpg'),
         },
         {

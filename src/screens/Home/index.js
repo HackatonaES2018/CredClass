@@ -31,14 +31,14 @@ export default class Home extends Component {
   }
 
   static navigationOptions = {
-    tabBarLabel: "Chat",
+    tabBarLabel: "Inicio",
     tabBarIcon: ({ tintColor, focused, horizontal }) => (
       <Ionicons
         name={focused ? "ios-chatboxes" : "ios-chatboxes-outline"}
         size={horizontal ? 20 : 26}
         style={{ color: tintColor }}
       />
-    )
+    ),
   };
 
   async componentDidMount() {
@@ -69,8 +69,13 @@ export default class Home extends Component {
           
           <View style={{marginHorizontal: 3, borderRadius: 5, height: 150, 
           backgroundColor: 'white', marginTop: 10, elevation: 2, padding: 10}}>
-              <Text style={{marginTop: 10, fontSize: 20}} >Rogerio Almeida Severo</Text>
-
+              <Text style={{marginTop: 10, fontSize: 18, fontWeigth: 'bold'}} >Rogerio Almeida Severo</Text>
+              
+              <View style ={{flexDirection: 'row', marginTop: 10, marginStart: 170}}>
+                <Text style={{marginTop: 12}}> Score: </Text>
+                <Text style={{fontSize: 30}}> 81% </Text>
+              </View>
+              <Text style = {{color: 'green', marginStart: 180}}>Score Positivo</Text>
           </View>
 
           <Text style={{marginStart: 5, marginTop: 10}} >Resumo da sua última proposta</Text>
