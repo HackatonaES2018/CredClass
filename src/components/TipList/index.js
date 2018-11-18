@@ -5,39 +5,46 @@ import { Image, View, Text, StyleSheet, ScrollView, Modal, TouchableHighlight } 
 import TipCell from '../TipCell'
 
 export default class TipList extends Component {
-   
+     
 
         state = {
 
         tipList: [
             {
               key: 1, 
+              title: "Pesquise possíveis restrições",
+              message: "Pagar suas contas antecipadamente...",
+              texto: "Para manter sempre seu nome limpo, pesquise sobre possíveis restrições nos canais de pesquisa: \n\n www.serasaexperian.com.br \n www.spcbrasil.org.br \n www.boavistaservicos.com.br \nwww.consumidorpositivo.com",    
+              image: require('../../images/image5.png'),    
+            }, 
+            {
+              key: 2, 
               title: "Cuidado com as contas",
               message: "Pagar suas contas antecipadamente...",
               texto: "Pagar suas contas antecipadamente demostram responsabilidade e ajudam a melhorar seu score, mantendo uma reputação favorável de bom pagador. Sempre que possível, antecipe seus pagamentos.",   
               image: require('../../images/image1.jpg'),
             },
             {
-              key: 2, 
+              key: 3, 
               title: "De olho nas dívidas",
-              message: "Não faça dívidas maiores...",
-              texto: "Não faça dívidas maiores do ",   
+              message: "Não faça dívidas que comprometam...", 
+              texto: "Não faça dívidas que comprometam seu orçamento. O ideal é sempre controlar suas dividas, não permitindo que elas ultrapassem 30% do seu orçamento para que seja possível ter um controle financeiro saudável.",   
               image: require('../../images/image2.jpg'),
             },
             {
-              key: 3, 
+              key: 4, 
               title: "Negociar é uma ótima saída",
-              message: "Caso esteja pendente com alguma empresa...",
-              texto: "Caso esteja pendente com alguma empresa, busque uma negociação e cumpra todo o acordo.",   
-              image: require('../../images/image3.jpg'),
+              message: "Caso tenha alguma dívida...",  
+              texto: "Caso tenha alguma dívida em atraso busque sempre por em dia o mais rápido possível. Lembre-se, negociar a dívida é sempre uma ótima saída, busque sempre a negociação e cumpra a sua parte do acordo.",   
+              image: require('../../images/image3.jpg'), 
             },
             {
-              key: 4,  
+              key: 5,  
               title: "Atualize suas informações",
-              message: "Atualize suas inform...",
-              texto: "Mantenha seus dados cadastrais atualizados",   
+              message: "Atualize seus dados cadastrais...",
+              texto: "Mantenha seus dados cadastrais sempre atualizados, com informações importantes e precisas para facilitar e melhorar as suas avaliações de perfil.",   
               image: require('../../images/image4.jpg'),
-            },
+            },  
         ],
 
         modalVisible: false,
