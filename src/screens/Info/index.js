@@ -86,7 +86,7 @@ export default class Info extends Component {
                           borderRadius: 5,
                           alignItems: "center",
                         }}
-                          onPress={() => this.setHorarioAula(index)}
+                          onPress={() => this.props.navigation.navigate('slideScreen')}
                       >
                         <View>
                           <Image style={{height: 120, width:180, alignSelf: 'center', borderRadius: 5, marginTop: 5}} source={item.image}/> 
