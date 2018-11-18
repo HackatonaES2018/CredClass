@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { createStackNavigator, createBottomTabNavigator } from 'react-navigation'
+import { createStackNavigator, createBottomTabNavigator, } from 'react-navigation'
 
 import Home from '../screens/Home'
 import Tips from '../screens/Tips'
@@ -16,10 +16,7 @@ const App = createBottomTabNavigator(
   },
   {
     initialRouteName: 'Home',
-    navigationOptions: defaultNavigationOptions,
-    cardStyle: {
-      backgroundColor: Colors.defaultBackground,
-    },
+
   },
 )
 
